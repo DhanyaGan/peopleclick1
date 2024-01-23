@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>WhatsApp and Call Icons</title>
+  <!-- Add your custom styles here -->
+  <style>
+    /* Add your styles for the icon container */
+    .icon-container {
+      position: fixed;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .whatsapp-icon, .call-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .whatsapp-icon {
+      background: url('assets/img/clients/whatsApp_icon.webp') center/cover no-repeat;
+    }
+
+    .call-icon {
+      background: url('assets/img/clients/call-us.png') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Icon Container -->
+<div class="icon-container">
+  <!-- WhatsApp Icon -->
+  <div class="whatsapp-icon" onclick="window.location.href='https://wa.me/1234567890'"></div>
+
+  <!-- Call Icon -->
+  <div class="call-icon" onclick="window.location.href='tel:+1234567890'"></div>
+</div>
+
+<!-- Your website content goes here -->
+
+</body>
+</html>
